@@ -21,7 +21,7 @@ public class TextArea {
     //TODO 2. Member 도메인(Entity) 작성 오픈소스 봐도 됨. 단! 어노테이션은 직접 매핑할것 (클래스 추가).
     @Id  //TODO PK
     @GeneratedValue( strategy = GenerationType.IDENTITY )
-    private Long TA_id;
+    private Long Textarea_id;
 
     @Column( name = "title")
     private String title;
