@@ -1,12 +1,16 @@
 package com.ProjectGroup.Practice.Domain.TextArea;
 
-
+import lombok.Getter;
+import lombok.Setter;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.format.annotation.DateTimeFormat;
+/*
 
 import javax.persistence.*;
 import java.time.LocalDateTime;
 
+@Getter
+@Setter
 @Entity
 public class TextArea {
     //TODO GenerationType.IDENTITY  --> jpa는 hibernate의 sequence 를 사용해서 자동 할당  ///////////////이거랑
@@ -26,6 +30,7 @@ public class TextArea {
     @Column( name = "title")
     private String title;
 
+    @Enumerated(value = EnumType.STRING)
     @Column( name = "writer" )
     private String writer;
 
@@ -41,6 +46,9 @@ public class TextArea {
 
     @Enumerated( value = EnumType.STRING )
     @Column(name = "category")
-    private String category;
+    private Category category;
 
 }
+
+
+ */
