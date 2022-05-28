@@ -1,5 +1,5 @@
 package com.ProjectGroup.Practice.Service;
-/*
+
 import com.ProjectGroup.Practice.Domain.TextArea.Category;
 import com.ProjectGroup.Practice.Domain.TextArea.TextArea;
 
@@ -32,8 +32,3 @@ public class TextArService {
         }
     }
 }
-
-
-
-
- */

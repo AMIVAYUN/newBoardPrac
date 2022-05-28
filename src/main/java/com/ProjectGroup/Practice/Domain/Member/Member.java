@@ -3,7 +3,7 @@ package com.ProjectGroup.Practice.Domain.Member;
 import lombok.Getter;
 import lombok.Setter;
 import org.springframework.format.annotation.DateTimeFormat;
-/*
+
 import javax.annotation.processing.Generated;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
@@ -30,8 +30,3 @@ public class Member {
 
 
 }
-
-
-
-
- */

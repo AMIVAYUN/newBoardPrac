@@ -3,15 +3,16 @@ package com.ProjectGroup.Practice.Domain.TextArea;
 import lombok.Getter;
 import lombok.Setter;
 import org.springframework.beans.factory.annotation.Value;
+import org.springframework.data.mongodb.core.mapping.Document;
 import org.springframework.format.annotation.DateTimeFormat;
-/*
+
 
 import javax.persistence.*;
 import java.time.LocalDateTime;
 
 @Getter
 @Setter
-@Entity
+@Document
 public class TextArea {
     //TODO GenerationType.IDENTITY  --> jpa는 hibernate의 sequence 를 사용해서 자동 할당  ///////////////이거랑
     //TODO  GenerationType.AUTO --> 사용하고자 하려는 데이터베이스의 기본 id 생성 전략을 사용 (jpa 기준) //////이거 추천
@@ -24,31 +25,29 @@ public class TextArea {
     //TODO 1. TextArea ( 회원 비회원 둘다 적용할 수 있도록 엔티티 조금 수정, 절대 클래스를 더 만들지 말것. )
     //TODO 2. Member 도메인(Entity) 작성 오픈소스 봐도 됨. 단! 어노테이션은 직접 매핑할것 (클래스 추가).
     @Id  //TODO PK
-    @GeneratedValue( strategy = GenerationType.IDENTITY )
+    @Setter
+    //@GeneratedValue( strategy = GenerationType.IDENTITY )
     private Long Textarea_id;
 
-    @Column( name = "title")
+    //@Column( name = "title")
     private String title;
 
-    @Enumerated(value = EnumType.STRING)
-    @Column( name = "writer" )
+    //@Enumerated(value = EnumType.STRING)
+    //@Column( name = "writer" )
     private String writer;
 
-    @Lob
+    //@Lob
     private String conTent;
 
-    @Column( name = "viewcount")
+    //@Column( name = "viewcount")
     private Integer viewCount;
 
-    @Column( name = "create_date")
+   // @Column( name = "create_date")
     @DateTimeFormat( pattern = "yyyy-mm-dd")
     private LocalDateTime createDate;
 
-    @Enumerated( value = EnumType.STRING )
-    @Column(name = "category")
+    //@Enumerated( value = EnumType.STRING )
+    //@Column(name = "category")
     private Category category;
 
 }
-
-
- */
