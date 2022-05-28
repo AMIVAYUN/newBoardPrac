@@ -1,21 +1,26 @@
 package com.ProjectGroup.Practice.Domain.TextArea;
 
 
+
 import lombok.AllArgsConstructor;
+
 import lombok.Getter;
 import lombok.Setter;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;
 import org.springframework.format.annotation.DateTimeFormat;
+/*
 
 
 import java.time.LocalDateTime;
+
 
 @Document
 @Getter
 @Setter
 @AllArgsConstructor
+
 public class TextArea {
     //TODO GenerationType.IDENTITY  --> jpa는 hibernate의 sequence 를 사용해서 자동 할당  ///////////////이거랑
     //TODO  GenerationType.AUTO --> 사용하고자 하려는 데이터베이스의 기본 id 생성 전략을 사용 (jpa 기준) //////이거 추천
@@ -34,6 +39,8 @@ public class TextArea {
     private String title;
 
 
+
+
     private String writer;
 
 
@@ -47,6 +54,10 @@ public class TextArea {
     private LocalDateTime createDate;
 
 
+
     private Category category;
 
 }
+
+
+ */

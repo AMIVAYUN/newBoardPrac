@@ -1,0 +1,66 @@
+#body{
+    position:relative;
+    width:100%;
+    height:100%;
+    white-space: nowrap;
+}
+#wrap{
+    width:100%;
+    
+    
+}
+
+#body_header{
+    
+    width:100%;
+    height:200px;
+    line-height: 200px;
+    margin-bottom: 30px;
+    background-color: #F5F5DC;
+}
+#body_header_title{
+    position:absolute;
+    left:50%;
+    transform:translate(-50%);
+    font-family: 'Jua', sans-serif;
+    font-size:30px;
+}
+#main{
+    width:80%;
+    position:absolute;
+    left:50%;
+    transform:translate(-50%);
+    height: 100%;
+    border: 5px solid #FFE4BA;
+    border-radius: 10px;
+}
+#noteList{
+    width:100%;
+    position:absolute;
+    left:50%;
+    transform:translate(-50%);
+    border-collapse: collapse; /* tr 줄*/
+}   
+#noteList th{
+    text-align: center;
+    border-bottom: 2px solid #FFE4BA;
+    
+}
+#noteList td{
+    text-align: center;
+
+    
+}
+#noteList tr{
+    height:30px;
+}
+#pager{
+    width:100%;
+    
+}
+.pagination{
+    position: absolute;
+    bottom: 0px;
+    left:50%;
+    transform:translate(-50%);
+}
