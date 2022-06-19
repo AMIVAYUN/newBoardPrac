@@ -4,19 +4,19 @@ import com.ProjectGroup.Practice.Domain.TextArea.Category;
 import com.ProjectGroup.Practice.Domain.TextArea.TextArea;
 
 import org.junit.jupiter.api.Test;
-import org.junit.runner.RunWith;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.test.context.junit4.SpringRunner;
 import org.springframework.test.context.web.WebAppConfiguration;
+import org.w3c.dom.Text;
 
 import java.time.LocalDateTime;
 
-import static org.junit.Assert.*;
 
 
-@WebAppConfiguration
-@RunWith(SpringRunner.class)
+
+
 @SpringBootTest
 public class MongotextRepositoryTest {
 
@@ -28,7 +28,13 @@ public class MongotextRepositoryTest {
 
     @Test
     public void test123(){
-        repository.insert(new TextArea(1l,"d","d","d",0,LocalDateTime.now(),Category.LIFE));
+        TextArea area = new TextArea();
+        area.setCategory(Category.LIFE);
+        area.setConTent("d");
+        area.setTitle("d");
+        area.setViewCount(0);
+        area.setWriter("hi");
+        repository.insert(area);
     }
 
 }
