@@ -1,6 +1,6 @@
 package com.ProjectGroup.Practice.Repository;
 
-
+/*
 import com.ProjectGroup.Practice.Domain.TextArea.Category;
 import com.ProjectGroup.Practice.Domain.TextArea.TextArea;
 import lombok.RequiredArgsConstructor;
@@ -36,3 +36,4 @@ public class TextAreaRepository {
 }
 
 
+ */

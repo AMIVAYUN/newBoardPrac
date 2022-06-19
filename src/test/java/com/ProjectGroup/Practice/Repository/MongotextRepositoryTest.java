@@ -22,7 +22,9 @@ public class MongotextRepositoryTest {
 
     @Autowired MongotextRepository repository;
 
-
+    public void test234(){
+        System.out.println(repository.count());
+    }
 
     @Test
     public void test123(){

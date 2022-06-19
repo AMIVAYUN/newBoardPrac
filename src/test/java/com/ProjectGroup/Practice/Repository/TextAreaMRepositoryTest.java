@@ -16,14 +16,6 @@ import java.time.LocalDateTime;
 public class TextAreaMRepositoryTest {
     @Autowired TextAreaMRepository repository;
 
-    @Test
-    public void 제발되라(){
-        TextArea a = new TextArea();
-        a.setCategory(Category.LIFE);
-        a.setTitle("d");
-        a.setWriter("da");
-        a.setConTent("dad");
-        a.setTextarea_id( 1l );
-    }
+
 
 }

@@ -1,15 +1,55 @@
 package com.ProjectGroup.Practice.Repository;
 
-import com.ProjectGroup.Practice.Domain.Member.Member;
+
+import com.ProjectGroup.Practice.Domain.TextArea.Category;
+import com.ProjectGroup.Practice.Domain.TextArea.TextArea;
 import lombok.RequiredArgsConstructor;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
 
-import javax.persistence.EntityManager;
+import java.time.LocalDateTime;
 import java.util.List;
 
 @Repository
 @RequiredArgsConstructor
 public class MemberRepository {
+
+    @Autowired
+    private MongotextRepository repository;
+
+    public void generateSequence(){
+
+
+
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     /*
     private final EntityManager em;
     private static long sequence = 0L;
