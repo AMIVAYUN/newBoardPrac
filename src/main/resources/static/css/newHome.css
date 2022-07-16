@@ -1,0 +1,51 @@
+#wrap{
+    overflow: revert;
+    position: absolute;
+    left:50%;
+    height: 100%;
+    width:1200px;
+    transform: translate( -50% );
+}
+nav{
+    height:50px;
+    border-bottom: 1px solid gray;
+}
+#pgtitle{
+    margin-left: 150px;
+    margin-top:150px;
+    font-family: 'Gugi', cursive;
+    font-size:19px;
+}
+#bodyHeader{
+    margin: 20px;
+    display: flex;
+
+    width:1200px;
+    height:300px
+
+}
+#table{
+    width:1200px;
+}
+#elem_1{
+    width:1200px;
+    display:flex;
+    justify-content: center;
+}
+#elem_2{
+    width:1200px;
+    display: flex;
+    justify-content: end;
+}
+.bump{
+    width:850px;
+}
+#writer{
+    width:120px;
+}
+#title{
+    width:970px;
+}
+#viewCnt{
+    width:90px;
+}
