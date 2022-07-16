@@ -12,7 +12,7 @@ import org.springframework.stereotype.Service;
 @RequiredArgsConstructor
 public class TextArService {
     private final TextAreaRepository textAreaRepository;
-
+/*
     public Long writeByUSER(TextWrite dto){
         TextArea newAr= new TextArea();
         newAr.setConTent(dto.getContent());
@@ -21,6 +21,8 @@ public class TextArService {
         newAr.setCategory(TextArService.getByString(dto.getCategory()));
         return textAreaRepository.save(newAr);
     }
+
+
     public static Category getByString( String str ){
         switch (str){
             case "game":
@@ -32,8 +34,4 @@ public class TextArService {
         }
     }
 }
-
-
-
-
  */
