@@ -19,7 +19,6 @@ import java.time.LocalDateTime;
 @Document
 @Getter
 @Setter
-@AllArgsConstructor
 
 public class TextArea {
     public static final String SEQUENCE_NAME = null;
