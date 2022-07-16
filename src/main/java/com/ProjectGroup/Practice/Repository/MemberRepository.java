@@ -18,6 +18,7 @@ public class MemberRepository {
 
     public long setSeq(){
         long seq = mongomemRepository.count() + 1;
+
         return seq;
     }
 
