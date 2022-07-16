@@ -20,21 +20,21 @@ import java.time.LocalDateTime;
 @SpringBootTest
 public class MongotextRepositoryTest {
 
-    @Autowired MongotextRepository repository;
+    //@Autowired MongotextRepository repository;
 
     public void test234(){
-        System.out.println(repository.count());
+        System.out.println("repository.count()");
     }
 
-    @Test
-    public void test123(){
-        TextArea area = new TextArea();
-        area.setCategory(Category.LIFE);
-        area.setConTent("d");
-        area.setTitle("d");
-        area.setViewCount(0);
-        area.setWriter("hi");
-        repository.insert(area);
-    }
+//    @Test
+//    public void test123(){
+//        TextArea area = new TextArea();
+//        area.setCategory(Category.LIFE);
+//        area.setConTent("d");
+//        area.setTitle("d");
+//        area.setViewCount(0);
+//        area.setWriter("hi");
+//        repository.insert(area);
+//    }
 
 }

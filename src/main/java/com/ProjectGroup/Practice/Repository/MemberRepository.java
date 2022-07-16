@@ -1,27 +1,49 @@
 package com.ProjectGroup.Practice.Repository;
 
 
-import com.ProjectGroup.Practice.Domain.TextArea.Category;
-import com.ProjectGroup.Practice.Domain.TextArea.TextArea;
+import com.ProjectGroup.Practice.Dto.Receive.Member;
 import lombok.RequiredArgsConstructor;
-import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.mongodb.core.query.Query;
 import org.springframework.stereotype.Repository;
 
-import java.time.LocalDateTime;
 import java.util.List;
 
 @Repository
 @RequiredArgsConstructor
 public class MemberRepository {
 
-    @Autowired
-    private MongotextRepository repository;
+    private final MongomemRepository mongomemRepository;
 
-    public void generateSequence(){
+    Query query = new Query();
 
-
-
+    public long setSeq(){
+        long seq = mongomemRepository.count() + 1;
+        return seq;
     }
+
+    public List<Member> findById(long id){
+        List<Member> result;
+        result = mongomemRepository.findById(id);
+
+        if(result == null)
+            new IllegalArgumentException("데이터가 없습니다.");
+
+        return result;
+    }
+
+    public List<Member> findByName(String name){
+        List<Member> result = null;
+
+        result = mongomemRepository.findByName(name);
+
+        if(result == null)
+            new IllegalArgumentException("데이터가 없습니다.");
+
+        return result;
+    }
+
+
+
 
 
 
