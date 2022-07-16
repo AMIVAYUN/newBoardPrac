@@ -1,6 +1,7 @@
 package com.ProjectGroup.Practice.Controller;
 
 
+import lombok.Getter;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
@@ -9,8 +10,16 @@ import org.springframework.web.bind.annotation.RestController;
 @Controller
 public class HomeController {
     @GetMapping("/")
-    public String home(){
+    public String home() {
+        return "newHome";
+    }
+    @GetMapping("/prev")
+    public String home2(){
         return "Sub";
+    }
+    @GetMapping("/log-in")
+    public String logIn(){
+        return "/Private/login";
     }
 
 }
