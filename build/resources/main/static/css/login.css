@@ -1,0 +1,44 @@
+body{
+    width:800px;
+    height:600px;
+}
+#title{
+    font-family: 'Gugi', cursive;
+    font-size:19px;
+}
+#logForm{
+    display: flex;
+    flex-direction: column;
+    margin:100px;
+    width:600px;
+    height:600px;
+}
+#inp_id{
+    width:600px;
+}
+
+#inp_pw{
+    width:600px;
+}
+
+#announce{
+    width:600px;
+    display: flex;
+    flex-direction: column;
+
+}
+#logsession{
+    margin-top:20px;
+    display: flex;
+    justify-content: space-between;
+}
+#btn_login{
+    margin-top: 10px;
+
+    width:280px;
+}
+#btn_join{
+    margin-top: 10px;
+
+    width:280px;
+}
