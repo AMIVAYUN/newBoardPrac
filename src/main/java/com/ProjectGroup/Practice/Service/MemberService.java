@@ -21,6 +21,7 @@ public class MemberService {
     MongomemRepository mongomemRepository;
 
 
+
     public Long join(Member member){
 
 //        member.setId(memberRepository.setSeq());
