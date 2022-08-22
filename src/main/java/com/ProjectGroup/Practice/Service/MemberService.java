@@ -2,6 +2,7 @@ package com.ProjectGroup.Practice.Service;
 
 import com.ProjectGroup.Practice.Dto.Receive.Member;
 
+import com.ProjectGroup.Practice.Dto.Receive.MemberLoginDto;
 import com.ProjectGroup.Practice.Repository.MemberRepository;
 import com.ProjectGroup.Practice.Repository.MongomemRepository;
 import lombok.RequiredArgsConstructor;
@@ -9,10 +10,11 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.time.LocalDateTime;
+import java.util.List;
 
 @Service
 @RequiredArgsConstructor
-public class MemberService {
+public class MemberService<list> {
 
     @Autowired
     MemberRepository memberRepository;
@@ -20,7 +22,15 @@ public class MemberService {
     @Autowired
     MongomemRepository mongomemRepository;
 
+    public boolean findByLogin(MemberLoginDto dto){
+        List<Member> result;
+        result = mongomemRepository.findAll();
 
+        for(int i = 0; i < result.size(); i++){
+            if(result.get(i).getUserid().equals(dto.getUserId()) && result.get(i).getPassword().equals(dto.getPassword())) return true;
+        }
+        return false;
+    }
 
     public Long join(Member member){
 

@@ -22,15 +22,15 @@ public class MemberRepository {
         return seq;
     }
 
-    public List<Member> findById(long id){
-        List<Member> result;
-        result = mongomemRepository.findById(id);
-
-        if(result == null)
-            new IllegalArgumentException("데이터가 없습니다.");
-
-        return result;
-    }
+//    public List<Member> findById(long id){
+//        List<Member> result;
+//        result = mongomemRepository.findById(id);
+//
+//        if(result == null)
+//            new IllegalArgumentException("데이터가 없습니다.");
+//
+//        return result;
+//    }
 
     public List<Member> findByName(String name){
         List<Member> result = null;

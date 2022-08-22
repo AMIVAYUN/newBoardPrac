@@ -18,15 +18,13 @@ public class MemberController {
     private final MemberService memberService;
 
 
-    @PostMapping("/member/log-in")
-    public ResponseEntity<Logresult > getLogin(@RequestBody MemberLoginDto dto ){
-        log.info("로그인 정보: :" + dto.getUsername() );
-
-
-
-
-        Logresult result = new Logresult();
-        result.setResult("성공!");
-        return new ResponseEntity< Logresult > (  result, HttpStatus.valueOf(200) );
-    }
+//    @PostMapping("/member/log-in")
+//    public ResponseEntity<Logresult > getLogin(@RequestBody MemberLoginDto dto ){
+//        log.info("로그인 정보: :" + dto.getUsername() );
+//
+//
+//        Logresult result = new Logresult();
+//        result.setResult("성공!");
+//        return new ResponseEntity< Logresult > (  result, HttpStatus.valueOf(200) );
+//    }
 }

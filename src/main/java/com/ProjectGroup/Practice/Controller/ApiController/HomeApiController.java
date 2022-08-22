@@ -22,11 +22,11 @@ import java.time.LocalDateTime;
 @RestController
 @RequiredArgsConstructor
 public class HomeApiController {
-
-    private final MemberService memberService;
-    MongomemRepository mongomemRepository;
-
-
+//
+//    private final MemberService memberService;
+//    MongomemRepository mongomemRepository;
+//
+//
 
 
 //    private final TextArService taSerivice;
