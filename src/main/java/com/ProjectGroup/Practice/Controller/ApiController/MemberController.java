@@ -19,12 +19,18 @@ public class MemberController {
     private final MemberService memberService;
 
     @PostMapping("/member/log-in")
-    public ResponseEntity<Logresult > getLogin(@RequestBody MemberLoginDto dto ){
-        log.info("로그인 정보: :" + dto.getUserId() );
+    public ResponseEntity < String > getLogin(@RequestBody MemberLoginDto dto ){
+//        log.info("로그인 정보: :" + dto.getUserId() );
+//
+//        Logresult result = new Logresult();
+//        result.setResult("성공!");
+//        return new ResponseEntity< Logresult > (  result, HttpStatus.valueOf(200) );
 
-        Logresult result = new Logresult();
-        result.setResult("성공!");
-        return new ResponseEntity< Logresult > (  result, HttpStatus.valueOf(200) );
 
+        if(memberService.findByLogin(dto)){
+            return new ResponseEntity<String>("성공", HttpStatus.ACCEPTED);
+        }else{
+            return new ResponseEntity<>("fail", HttpStatus.BAD_REQUEST);
+        }
     }
 }
